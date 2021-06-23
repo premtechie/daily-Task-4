@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+}
+
+.main-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-detail{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pic{
+    width: 60%;
+    border-radius: 15px;
+}
+.name{
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4E5150;
+}
+.place{
+    margin: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+.grid-container {
+    width: 60%;
+    height: 100vh;
+    display: grid;
+    margin: 5% auto;
+    grid-gap: 30px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(9,1fr);
+}
+.grid-item.one{
+    grid-column: span 2;
+    grid-row: span 3;
+    background: url('photo1.png');
+    background-size: cover;
+    border-radius: 12px;
+}
+.grid-item.two{
+    grid-column: span 4;
+    grid-row: span 3;
+    background: url('photo2.png');
+    background-size: cover;
+    border-radius: 12px;
+}.grid-item.three{
+    grid-column: span 4;
+    grid-row: span 3;
+    background: url('photo3.png');
+    background-size: cover;
+    border-radius: 12px;
+}.grid-item.four{
+    grid-column: span 2;
+    grid-row: span 6;
+    background: url('photo_4.png');
+    background-size: cover;
+    border-radius: 12px;
+}
+.grid-item.five{
+    grid-column: span 2;
+    grid-row: span 3;
+    background: url('photo5.png');
+    background-size: cover;
+    border-radius: 12px;
+}
+.grid-item.six{
+    grid-column: span 2;
+    grid-row: span 3;
+    background: url('photo6.png');
+    background-size: cover;
+    border-radius: 12px;
+}
+.post-cards{
+    display: flex;
+}
+.post,.followers,.following{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 67px;
+    background: #E5E5E5;
+    border-radius: 12px;
+    margin: 10px;
+}
+span{
+    height: 14.24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media(max-width:550px){
+    .profile-content{
+        margin-top: 20px;
+    }
+    .profile-detail{
+        width: 170px;
+   }
+   .name{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 24px;
+   }
+   .place{
+    margin: 10px;
+    font-size: 12px;
+    line-height: 15px;
+   }
+    .grid-container {
+        width: 95%;
+        margin: 10px auto;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(9,1fr);
+    }
+    .grid-item.one{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .grid-item.two{
+        grid-column: span 2;
+        grid-row: span 2;
+    }.grid-item.three{
+        grid-column: span 2;
+        grid-row: span 2;
+    }.grid-item.four{
+        grid-column: span 1;
+        grid-row: span 4;
+    }
+    .grid-item.five{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .grid-item.six{
+        grid-column: span 1;
+        grid-row: span 2;
+    }   
+}
